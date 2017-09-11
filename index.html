@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Creación Web</title>
+	<link rel="stylesheet" href="./css/estilos.css">
+	<link rel="shortcut icon" href="./img/favicon.ico">
+	<script src="./libs/jquery-3.1.1.js"></script>
+	<script src="./js/funciones.js"></script>
+</head>
+<body id="bodyPrimera">
+	<header>
+		<img src="./img/cloud.png" alt="Nube" id="nube">
+		<img src="./img/cloud.png" alt="Nube" id="nube2">
+		<h1 id="tituloPrimero">CREACIÓN WEB</h1>
+		<button id="deslizar" class="boton2">CLICK PARA MOSTRAR EL MAIN</button>
+		<button id="deslizar2" class="boton2">CLICK PARA MOSTRAR EL ASIDE</button>
+		<button id="deslizar3" class="boton2">CLICK PARA MOSTRAR CABECERA Y PIE</button>
+	</header>
+	<main>
+		<p id="info">ZONA DEL MAIN</p>
+		<form action="javascript:void(0)" method="post">
+			<div class="tabla-responsive">
+				<div class="fila">
+					<div>
+						<label for="alinear">Alineamiento de la página</label>
+					</div>
+					<div>
+						<select name="" id="alinear">
+							<option value="left">IZQUIERDA</option>
+							<option value="center">CENTRO</option>
+							<option value="right">DERECHA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="tipoFuente">Tipo de fuente de la página</label>
+					</div>
+					<div>
+						<select name="" id="tipoFuente">
+							<option value="arial">ARIAL</option>
+							<option value="courier">COURIER</option>
+							<option value="tahoma">TAHOMA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="estiloFuente">Estilo de la fuente de la página</label>
+					</div>
+					<div>
+						<select name="" id="estiloFuente">
+							<option value="normal">NORMAL</option>
+							<option value="italic">ITÁLICA</option>
+							<option value="oblique">OBLICUA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="fontSize">Tamaño de fuente de la página</label>
+					</div>
+					<div>
+						<input type="number" id="fontSize" min="8" max="72">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="colorFondo">Colores: Fondo / letra</label>
+					</div>
+					<div>
+						<input type="color" id="colorFondo" value="#FFFFFF">	
+						<input type="color" id="colorLetra">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="title">Título de la página</label>
+					</div>
+					<div>
+						<input type="text" id="title">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="cabecera">Título de la cabecera</label>
+					</div>
+					<div>
+						<input type="text" id="cabecera">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="central">Texto central</label>
+					</div>
+					<div>
+						<textarea cols="40" rows="10" id="central"></textarea>
+					</div>
+				</div>
+			</div>
+			<input type="submit" value="Enviar" id="enviar" class="boton boton-enviar">
+		</form>
+	</main>
+
+	<div id="aside" data-activado="false">
+				<p id="info">ZONA DEL ASIDE</p>
+		<form action="#">
+			<div class="tabla-responsive">
+				<div class="fila">
+					<div>
+						<label for="alinear2">Alineamiento del aside</label>
+					</div>
+					<div>
+						<select name="" id="alinear2">
+							<option value="left">IZQUIERDA</option>
+							<option value="center">CENTRO</option>
+							<option value="right">DERECHA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="tipoFuente2">Tipo de fuente del aside</label>
+					</div>
+					<div>
+						<select name="" id="tipoFuente2">
+							<option value="arial">ARIAL</option>
+							<option value="courier">COURIER</option>
+							<option value="tahoma">TAHOMA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="estiloFuente2">Estilo de la fuente de la página</label>
+					</div>
+					<div>
+						<select name="" id="estiloFuente2">
+							<option value="normal">NORMAL</option>
+							<option value="italic">ITÁLICA</option>
+							<option value="oblique">OBLICUA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="fontSize2">Tamaño de fuente de la página</label>
+					</div>
+					<div>
+						<input type="number" id="fontSize2" min="8" max="72">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="colorFondo2">Colores: Fondo / letra</label>
+					</div>
+					<div>
+						<input type="color" id="colorFondo2" value="#FFFFFF">	
+						<input type="color" id="colorLetra2">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="cabecera2">Título del aside</label>
+					</div>
+					<div>
+						<input type="text" id="cabecera2">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="central2">Texto central</label>
+					</div>
+					<div>
+						<textarea cols="40" rows="10" id="central2"></textarea>
+					</div>
+				</div>
+			</div>
+				<input type="submit" value="Enviar" id="enviar2" class="boton boton-enviar">
+		</form>
+	</div>
+
+	<div id="cabeceraypie" data-activado="false">
+				<p id="info">ZONA DE LA CABECERA</p>
+		<form action="#">
+			<div class="tabla-responsive">
+				<div class="fila">
+					<div>
+						<label for="alinear3">Alineamiento de la cabecera</label>
+					</div>
+					<div>
+						<select name="" id="alinear3">
+							<option value="left">IZQUIERDA</option>
+							<option value="center">CENTRO</option>
+							<option value="right">DERECHA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="tipoFuente3">Tipo de fuente de la cabecera</label>
+					</div>
+					<div>
+						<select name="" id="tipoFuente3">
+							<option value="arial">ARIAL</option>
+							<option value="courier">COURIER</option>
+							<option value="tahoma">TAHOMA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="estiloFuente3">Estilo de la fuente de la página</label>
+					</div>
+					<div>
+						<select name="" id="estiloFuente3">
+							<option value="normal">NORMAL</option>
+							<option value="italic">ITÁLICA</option>
+							<option value="oblique">OBLICUA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="fontSize3">Tamaño de fuente de la página</label>
+					</div>
+					<div>
+						<input type="number" id="fontSize3" min="8" max="72">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="colorFondo2">Colores: Fondo / letra</label>
+					</div>
+					<div>
+						<input type="color" id="colorFondo3" value="#FFFFFF">	
+						<input type="color" id="colorLetra3">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="cabecera3">Título de la cabecera</label>
+					</div>
+					<div>
+						<input type="text" id="cabecera3">
+					</div>
+				</div>
+			</div>
+
+		<p id="info">ZONA DEL PIE</p>
+
+		<form action="#">
+			<div class="tabla-responsive">
+				<div class="fila">
+					<div>
+						<label for="alinear4">Alineamiento de la cabecera</label>
+					</div>
+					<div>
+						<select name="" id="alinear4">
+							<option value="left">IZQUIERDA</option>
+							<option value="center">CENTRO</option>
+							<option value="right">DERECHA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="tipoFuente4">Tipo de fuente de la cabecera</label>
+					</div>
+					<div>
+						<select name="" id="tipoFuente4">
+							<option value="arial">ARIAL</option>
+							<option value="courier">COURIER</option>
+							<option value="tahoma">TAHOMA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="estiloFuente4">Estilo del pie</label>
+					</div>
+					<div>
+						<select name="" id="estiloFuente4">
+							<option value="normal">NORMAL</option>
+							<option value="italic">ITÁLICA</option>
+							<option value="oblique">OBLICUA</option>
+						</select>
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="fontSize4">Tamaño del pie</label>
+					</div>
+					<div>
+						<input type="number" id="fontSize4" min="8" max="72">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="colorFondo4">Colores: Fondo / letra</label>
+					</div>
+					<div>
+						<input type="color" id="colorFondo4" value="#FFFFFF">	
+						<input type="color" id="colorLetra4">
+					</div>
+				</div>
+				<div class="fila">
+					<div>
+						<label for="cabecera4">Texto del pie</label>
+					</div>
+					<div>
+						<textarea cols="40" rows="10" id="cabecera4"></textarea>
+					</div>
+				</div>
+			</div>
+			<input type="submit" value="Enviar" id="enviar3" class="boton boton-enviar">
+		</form>
+	</div>
+
+	<footer>
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+		<p id="creado">CREADO POR JUAN CARLOS PAZ DELGADO - 2º DAW</p>
+	</footer>
+</body>
+</html>

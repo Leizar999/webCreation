@@ -1,0 +1,207 @@
+#bodyPrimera {
+	text-align: center;
+	font-family: Arial;
+	background-color: #F4F7F7;
+}
+
+.tabla-responsive {
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+
+.tabla-responsive .fila {
+	display: block;
+}
+
+.tabla-responsive .fila div {
+	display: block;
+	width: 100%;
+	padding: 0.3rem;
+}
+
+.tabla-responsive .fila select, .tabla-responsive .fila input, .tabla-responsive .fila textarea {
+	width: 100%;
+}
+
+.tabla-responsive .fila textarea {
+	resize: none;
+}
+
+.tabla-responsive .fila input[type="color"]{
+	width: 49%;
+	text-align: center;
+}
+
+header {
+	margin-top: 1rem;
+	font-family: monospace;
+	color: white;
+	background-color: #34495E;
+	overflow: hidden;
+}
+
+#tituloPrimero {
+	position: relative;
+	letter-spacing: 0.3rem;
+	font-size: 3rem;
+	margin-top: -1rem;
+	transition: 2s;
+}
+
+main, #aside, #cabeceraypie {
+	background-color: #F4F7F7;
+	max-width: 45rem;
+	padding: 2rem;
+	margin: 2rem auto;
+	font-size: 1.2rem;
+	box-shadow: 0.2rem 0.2rem 0.8rem #888888;
+}
+
+#info {
+	font-weight: bold;
+}
+
+footer {
+	position: relative;
+	right: 0;
+	transition: 2s;
+	background-color: #AACFD0;
+	padding: 1rem;
+}
+
+/*ANIMACIONES*/
+
+#nube {
+	position: relative;
+	top: 2rem;
+	left: 2rem;
+	right: 2rem;
+	width: 40%;
+	transition: 8s;
+	z-index: 3;
+}
+
+#nube2 {
+	position: relative;
+	top: 2rem;
+	left: -2rem;
+	right: -2rem;
+	width: 50%;
+	transition: 8s;
+	z-index: 3;
+}
+
+.clear {
+	clear: both;
+}
+
+.boton {
+	width: 100%;
+	border: 0.1rem solid transparent;
+	padding: 1rem;
+	transition: all 0.5s;
+	margin-top: 1rem;
+}
+
+.boton:hover {
+	border: 0.1rem solid #3A3A3A;
+	color: #3A3A3A;
+	background-color: transparent;
+}
+
+.boton-enviar {
+	background-color: #3A3A3A;
+	color: white;
+}
+
+.boton2 {
+	font-size: 0.8rem;
+	border: 0.1rem solid #3A3A3A;
+	transition: all 0.5s;
+	height: 2rem;
+	width: 100%;
+}
+
+.boton2:hover {
+	border: 0.1rem solid white;
+	color: white;
+	background-color: transparent;
+}
+
+#creado {
+	font-family: monospace;
+	font-weight: bold;
+	text-shadow: 0.3rem 0.2rem 0.2rem #aaa;
+}
+
+@media(min-width: 30rem){
+	.tabla-responsive {
+		display: table;
+		width: 100%;
+		text-align: left;
+	}
+
+	.tabla-responsive .fila {
+		display: table-row;
+	}
+
+	.tabla-responsive .fila div {
+		display: table-cell;
+		width: initial;
+		padding: 0.3rem;
+		vertical-align: middle;
+	}
+
+	.tabla-responsive .fila select, .tabla-responsive .fila input {
+		width: 100%;
+	}
+
+	.tabla-responsive .fila input[type="color"]{
+		width: 49%;
+		text-align: center;
+	}
+
+	#tituloPrimero {
+		position: relative;
+		letter-spacing: 1rem;
+		font-size: 5rem;
+		margin-top: -15rem;
+		transition: 2s;
+	}
+
+	.boton2 {
+		font-size: 1rem;
+		border: 0.1rem solid #3A3A3A;
+		transition: all 0.5s;
+		height: 2rem;
+		width: 52.5%;
+	}
+
+	header {
+		margin-top: 5rem;
+		font-family: monospace;
+		color: white;
+		background-color: #34495E;
+	}
+
+	#nube {
+		position: relative;
+		top: -2rem;
+		left: 22rem;
+		right: 22rem;
+		width: 30%;
+		transition: 8s;
+		z-index: 3;
+	}
+
+	#nube2 {
+		position: relative;
+		top: -2rem;
+		left: -22rem;
+		right: -22rem;
+		width: 40%;
+		transition: 8s;
+		z-index: 3;
+	}
+}
